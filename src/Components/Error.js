@@ -1,5 +1,5 @@
 import { useQuizContext } from "../QuizProvider";
-
+import React from "react";
 function Error() {
   const { errMsg } = useQuizContext();
   return (

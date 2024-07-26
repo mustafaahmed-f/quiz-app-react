@@ -1,5 +1,5 @@
 import { useQuizContext } from "../QuizProvider";
-
+import React from "react";
 function StartScreen() {
   const { questionsLength, dispatch, questions } = useQuizContext();
 
@@ -28,7 +28,7 @@ function StartScreen() {
         </select>
       </h3>
       <button className="btn btn-ui" onClick={handleStartQuiz}>
-        Lets's Start
+        Lets&apos;s Start
       </button>
     </div>
   );

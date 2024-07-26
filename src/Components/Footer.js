@@ -1,3 +1,6 @@
+/* eslint-disable react/prop-types */
+import React from "react";
+
 function Footer({ children }) {
   return <div>{children}</div>;
 }

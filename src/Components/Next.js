@@ -1,5 +1,5 @@
 import { useQuizContext } from "../QuizProvider";
-
+import React from "react";
 function Next() {
   const { dispatch, answer, questionsLength, index } = useQuizContext();
 

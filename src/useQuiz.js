@@ -31,7 +31,7 @@ function reducer(state, action) {
         selectedQuestions: state.questions.slice(0, action.payload),
       };
 
-    case "start":
+    case "start": {
       const ENUM = 20;
       return {
         ...state,
@@ -41,8 +41,9 @@ function reducer(state, action) {
             ? state.questions.length * ENUM
             : state.selectedQuestions.length * ENUM,
       };
+    }
 
-    case "Answer":
+    case "Answer": {
       const currentQ = state.questions[state.index];
       const isCorrect = currentQ.correctOption === action.payload;
       return {
@@ -50,6 +51,7 @@ function reducer(state, action) {
         answer: action.payload,
         points: isCorrect ? state.points + currentQ.points : state.points,
       };
+    }
 
     case "Next":
       return {

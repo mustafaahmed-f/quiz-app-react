@@ -1,5 +1,5 @@
 import { useQuizContext } from "../QuizProvider";
-
+import React from "react";
 function Final() {
   const { points, totalPoints, dispatch, highScore } = useQuizContext();
   let percentage = (points / totalPoints) * 100;

@@ -9,8 +9,7 @@ import Progress from "./Progress";
 import Next from "./Next";
 import Footer from "./Footer";
 import Timer from "./Timer";
-import { useQuiz } from "../useQuiz";
-import { useContext } from "react";
+import React from "react";
 import { useQuizContext } from "../QuizProvider";
 
 ////////////////////////////////////////////////////////////////////////////////////////////

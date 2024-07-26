@@ -1,5 +1,7 @@
+/* eslint-disable react/prop-types */
 import { createContext, useContext } from "react";
 import { useQuiz } from "./useQuiz";
+import React from "react";
 
 const QuizContext = createContext();
 
