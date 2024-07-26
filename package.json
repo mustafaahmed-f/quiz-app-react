@@ -13,10 +13,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "npm run server && react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts start",
+    "build": "npm run serve-json && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "serve-json": "node functions/json-server.js",
     "server": "json-server --watch data/questions.json --port 8000"
   },
   "eslintConfig": {
@@ -44,6 +45,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.7.0",
+    "@types/json-server": "^0.14.7",
     "eslint": "^9.7.0",
     "eslint-plugin-react": "^7.35.0",
     "globals": "^15.8.0"
